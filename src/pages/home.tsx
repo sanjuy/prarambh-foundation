@@ -149,7 +149,7 @@ export default function Home() {
       {/* ── Sticky Nav ── */}
       <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-2 ${t.nav} backdrop-blur border-b ${t.navBorder} transition-colors duration-500`}>
         <button onClick={() => scrollTo("cover")} className="flex items-center gap-3">
-          <img src="/logo-transparent.png" alt="Prarambh Foundation Logo" className="h-12 w-12 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo-transparent.png`} alt="Prarambh Foundation Logo" className="h-12 w-12 object-contain" />
           <div className="text-left hidden sm:block">
             <div className={`${t.text} font-bold text-base leading-none transition-colors duration-500`}>Prarambh Foundation</div>
             <div className="text-orange-400 text-[10px] tracking-widest uppercase mt-0.5">Ek Nayi Shuruaat</div>
@@ -214,11 +214,11 @@ export default function Home() {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="mb-8"
           >
-            <img
-              src="/logo-transparent.png"
-              alt="Prarambh Foundation Logo"
-              className="w-56 h-56 md:w-72 md:h-72 object-contain drop-shadow-2xl mx-auto"
-            />
+              <img
+               src={`${import.meta.env.BASE_URL}logo-transparent.png`}
+               alt="Prarambh Foundation Logo"
+               className="w-56 h-56 md:w-72 md:h-72 object-contain drop-shadow-2xl mx-auto"
+             />
           </motion.div>
 
           <motion.div
